@@ -1,6 +1,11 @@
 pipeline 
 {
   agent any
+
+    options {
+  wipeWorkspace()
+}
+
     stages 
     {
       stage('Checkout') 
